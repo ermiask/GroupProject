@@ -1,0 +1,300 @@
+    this is initial verson of file.txt
+
+juliasu@VW-ECLIPSE-056 ~/git (master)
+$ git show
+commit 54d421bcdd66a1a4f293334169879097258132ab
+Author: Julia Sulina <julia.sulina@gmail.com>
+Date:   Wed Nov 13 12:46:19 2013 +0200
+
+    i modified this file to say hello
+
+diff --git a/file.txt b/file.txt
+index e69de29..b6fc4c6 100644
+--- a/file.txt
++++ b/file.txt
+@@ -0,0 +1 @@
++hello
+\ No newline at end of file
+
+juliasu@VW-ECLIPSE-056 ~/git (master)
+$ cd
+.git/      file.txt   file2.txt
+
+juliasu@VW-ECLIPSE-056 ~/git (master)
+$ cd ~
+
+juliasu@VW-ECLIPSE-056 ~
+$ ls -lab .ssh/
+ls: .ssh/: No such file or directory
+
+juliasu@VW-ECLIPSE-056 ~
+$ ssh-keygen -t rsa -C "julia.sulina@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/z/.ssh/id_rsa):
+Created directory '/z/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /z/.ssh/id_rsa.
+Your public key has been saved in /z/.ssh/id_rsa.pub.
+The key fingerprint is:
+ff:b9:f2:43:25:44:12:d1:ca:37:c3:0b:6e:e2:a2:06 julia.sulina@gmail.com
+
+juliasu@VW-ECLIPSE-056 ~
+$ clip < ~/.ssh/id_rsa.pub
+
+juliasu@VW-ECLIPSE-056 ~
+$ git clone ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAtbX/3ZMI2G8ttjsJ8lKH0eu3yOYyW6z
+rLSgK96kW6K8292staDUWSZyRRnzMtkkCIysvM7VVV4Le4j3/v0uXKF2AGfEsTB7AaYzLyRrs52g12Y
+HlO2JnLC5V/VkFYShBYcchW5K/Rn8Yq9+A4y5efVxt/F7WOULkE5JWtvdU5+oDjbGdSHtvbqdjupVNo
+h64qUPJGnfKWnXcbOEDd7/VsTsLL1G8IaX+6MayYCuFA3cuMgveeotDQ0b9gLpMbV5XKLvwrwFXAcaU
+nehSl1Xcl7ZWp/rd+WOoanxnvJGY4pSfppDKwtMjnS2RCGOb+KsyM5oJ6GFd1FcjJ9VwoFO8tw== ju
+lia.sulina@gmail.com
+Too many arguments.
+
+usage: git clone [options] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recursive           initialize submodules in the clone
+    --recurse-submodules  initialize submodules in the clone
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --single-branch       clone only one branch, HEAD or --branch
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+
+
+juliasu@VW-ECLIPSE-056 ~
+$ git clone ff:b9:f2:43:25:44:12:d1:ca:37:c3:0b:6e:e2:a2:06
+Cloning into '06'...
+ssh: ff: no address associated with name
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+juliasu@VW-ECLIPSE-056 ~
+$ git clone git@github.com:julia-sulina/GroupProject.git
+Cloning into 'GroupProject'...
+The authenticity of host 'github.com (192.30.252.129)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.129' (RSA) to the list of know
+n hosts.
+warning: You appear to have cloned an empty repository.
+
+juliasu@VW-ECLIPSE-056 ~
+$
+
+juliasu@VW-ECLIPSE-056 ~
+$
+
+juliasu@VW-ECLIPSE-056 ~
+$
+
+juliasu@VW-ECLIPSE-056 ~
+$
+
+juliasu@VW-ECLIPSE-056 ~
+$ ls
+03_Theorems_STD_forms (1).doc              Untitled.png
+1381280_10151946632496983_278312111_n.jpg  ZT.pdf
+1450221_656892007665028_1624985273_n.jpg   ZT.txt
+2013_09_04                                 about-face-jevgeni-new.jpg
+23.PNG                                     about-face-toomas-2012.jpg
+660x122-JavaIsCured.jpg                    cars.php
+Capture.PNG                                cast1
+DC lab                                     circuit.PNG
+Doc1.docx                                  drop.php
+GroupProject                               git
+Homework 1.pdf                             int programming
+IMG.jpg                                    lesson1.txt
+IMG_0001.jpg                               logo-zt.png
+IMG_0002.jpg                               other stuff
+IMG_0003.jpg                               public_html
+JRebel-Rainblock.jpg                       room.max
+JavaLabs                                   soft eng
+LCNA.docx                                  unix
+MyJava                                     unix2013
+TI12S2_curriculum.pdf                      ww.ipynb
+Thumbs.db
+
+juliasu@VW-ECLIPSE-056 ~
+$ cd GroupProject
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git add file1.txt
+fatal: pathspec 'file1.txt' did not match any files
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git add file1.txt
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   file1.txt
+#
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git commit -m "created file1"
+[master (root-commit) 39218c5] created file1
+ 0 files changed
+ create mode 100644 file1.txt
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git status
+# On branch master
+nothing to commit, working directory clean
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Warning: Permanently added the RSA host key for IP address '192.30.252.128' to t
+he list of known hosts.
+No refs in common and none specified; doing nothing.
+Perhaps you should specify a branch such as 'master'.
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'git@github.com:julia-sulina/GroupProject.git
+'
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git status
+# On branch master
+nothing to commit, working directory clean
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git pull
+Warning: Permanently added the RSA host key for IP address '192.30.252.130' to t
+he list of known hosts.
+Your configuration specifies to merge with the ref 'master'
+from the remote, but no such ref was fetched.
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git add file1.txt
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git commit -m "my initial edit"
+[master 54519a4] my initial edit
+ 1 file changed, 1 insertion(+)
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+No refs in common and none specified; doing nothing.
+Perhaps you should specify a branch such as 'master'.
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'git@github.com:julia-sulina/GroupProject.git
+'
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git pull
+Warning: Permanently added the RSA host key for IP address '192.30.252.131' to t
+he list of known hosts.
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 3 (delta 0)
+Unpacking objects: 100% (6/6), done.
+From github.com:julia-sulina/GroupProject
+   54519a4..e50fdd0  master     -> origin/master
+Updating 54519a4..e50fdd0
+Fast-forward
+ README.md  | 2 ++
+ myfile.txt | 1 +
+ 2 files changed, 3 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 myfile.txt
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git commit file1.txt
+Aborting commit due to empty commit message.
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git add file1.txt
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git commit -m "i modify"
+[master 30dac1c] i modify
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 5, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 341 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:julia-sulina/GroupProject.git
+   e50fdd0..30dac1c  master -> master
+
+juliasu@VW-ECLIPSE-056 ~/GroupProject (master)
+$
