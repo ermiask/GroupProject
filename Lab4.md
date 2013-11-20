@@ -15,6 +15,7 @@
 the SplitPay system
 
 * Overall description of the product (=what is it? can you understand it?)
+* 
 The SplitPay system is composed of two main components: a client-side application which will
 run on Android handsets, and a server-side application which will support and interact with
 various client-side features. The system is designed to facilitate the process of tracking and
@@ -23,10 +24,12 @@ sharing travel expenses, etc.
 Quite easy to understand, when potential scenarios are provided
 
 * Target audience?
+* 
 Describes for whom document is written, rather than the project potential users. Document is intended for all individuals participating in and/or supervising the SplitPay
 project.
 
 * The situation?
+* 
 There are several applications “on the market” which are similar to proposed app (examples include
 Bills Are In, Share a Bill, Split a Bill, Fair Share, and Xpense Split). A majority of these are web-based
 applications with little or no mobile functionality. In addition, they all require users to set up an account
@@ -35,6 +38,7 @@ leaving the Android market open. Furthermore, authors plan on adding some featur
 currently available in any of these applications.(Appendix B)
 
 * Motivation?
+* 
 Document authors are designing an application that facilitates the process of paying off shared expenses. They want to make it easier to pay for things as a group. This is relevant in many different
 situations, ranging from every day transactions (friends splitting the cost of dinner), to recurring
 payments (roommates paying rent), to a more professional setting (a team of professionals making
@@ -42,6 +46,7 @@ business transactions). Depending on the number of people and/or the amount of m
 these situations can get very complicated.(Appendix B)
 
 * Structure
+* 
 1. Introduction [1.1 Purpose; 1.2 Document Conventions; 1.3 Intended Audience and Reading Suggestions; 1.4 Project Scope]
 2. Overall Description [2.1 Product Perspective; 2.2 Product Features; 2.3 User Classes and Characteristics; 2.4 Operating Environment ; 2.5 Design and Implementation Constraints ; 2.6 User Documentation ; 2.7 Assumptions and Dependencies]
 3. System Features [Core Features; Additional Features]
@@ -55,6 +60,7 @@ these situations can get very complicated.(Appendix B)
 
 
 * Compare the structure of the document with the template provided for the course group work. How does it differ? Is there more? Less? (check also the contents and structure of SRS provided in Wikipedia: 	http://en.wikipedia.org/wiki/Software_requirements_specification). 
+* 
 Structure differs from both group work  and wikipedia templates.
 Analysis of the differences from groupwork template: 
 It is possible to find information about almost all groupwork structure elements, but they are ordered differently. For example project context is described in appendix B(as a project team already had Software Application Proposal, they just included it to document); Use cases are not presented as a separate part, potentional scenarios are described under USER CLASSES AND CHARACTERISTICS.
@@ -62,27 +68,43 @@ Ofcourse document did not include part for self reflection, it had KEY MILESTONE
 
 *(Use cases)**
 * What the system (will) do?
+* 
  The SplitPay project is meant to offer a shared expenses solution that is faster, easier, and more
 convenient than manually calculating and handling debts.
 
 * Use case diagram?
+* 
      when the application is installed and run for the very first time,the user is presented with an intial registration/welcome sceern. this sceern prompts the user to create an account on the spiltpay server using the email address associated with his/her google account. the user also enters a "display name"which will be the name that is shown as their handle within the groups.completing this process will create and store an account for the user on the splitpay server, enabling all of the application's synchronization capablities.
+
 * How cases are described, how much details?
    the case is driscribed well detailed.
+
 **(General structure of the system)**
+
 * What chart techniques are used? Why?
+* 
   the general stucture focused on the functional and non functional part than using chart technique.
+
 **(Functional & non-functional requirements)**
+
 * Listed?
+* 
   functional and non functonal requirements are listed very well.
 * Measurable/traceability? (is it possible to check from the upcoming end product if a feature / requirement is implemented or not?)
-   yes      
+   
+yes      
+
 **(How does (will) it look?)**
+
 * UI examples / views?
+* 
      there is a good UI exmaples.
 * Are the pictures mockups or screenshots from existing system?
+* 
   yes there is mockup picture. 
+
 * Transitions between views
+* 
    it is not discribed in this documentation
 
 **(Process model? [might not exist, some times in a separate document called ‘project plan’])**
