@@ -60,22 +60,30 @@ Analysis of the differences from groupwork template:
 It is possible to find information about almost all groupwork structure elements, but they are ordered differently. For example project context is described in appendix B(as a project team already had Software Application Proposal, they just included it to document); Use cases are not presented as a separate part, potentional scenarios are described under USER CLASSES AND CHARACTERISTICS.
 Ofcourse document did not include part for self reflection, it had KEY MILESTONES part, where dates important for project were marked.
 
-**(Use cases)**
+*(Use cases)**
 * What the system (will) do?
-* Use case diagram?
-* How cases are described, how much details?
+ The SplitPay project is meant to offer a shared expenses solution that is faster, easier, and more
+convenient than manually calculating and handling debts.
 
+* Use case diagram?
+     when the application is installed and run for the very first time,the user is presented with an intial registration/welcome sceern. this sceern prompts the user to create an account on the spiltpay server using the email address associated with his/her google account. the user also enters a "display name"which will be the name that is shown as their handle within the groups.completing this process will create and store an account for the user on the splitpay server, enabling all of the application's synchronization capablities.
+* How cases are described, how much details?
+   the case is driscribed well detailed.
 **(General structure of the system)**
 * What chart techniques are used? Why?
-
+  the general stucture focused on the functional and non functional part than using chart technique.
 **(Functional & non-functional requirements)**
 * Listed?
+  functional and non functonal requirements are listed very well.
 * Measurable/traceability? (is it possible to check from the upcoming end product if a feature / requirement is implemented or not?)
-
+   yes      
 **(How does (will) it look?)**
 * UI examples / views?
+     there is a good UI exmaples.
 * Are the pictures mockups or screenshots from existing system?
+  yes there is mockup picture. 
 * Transitions between views
+   it is not discribed in this documentation
 
 **(Process model? [might not exist, some times in a separate document called ‘project plan’])**
 * Allocation of resources / budget?
