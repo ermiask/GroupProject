@@ -47,6 +47,7 @@ view statistics
   map with locations in accordance to query is shown
   
 3. Model one scenario as a flowchart using astah.
+[flowchart](flowchart.PNG)
   You can use the following types of nodes
   * start (the initial state) 
   * end state 
