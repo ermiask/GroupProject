@@ -1,0 +1,67 @@
+##Lab 5: Use cases scenario, flow chart (activity diagram), user interface views & components
+
+####A. Use cases scenario and flow chart
+
+1. If not already started, list (some of) the use cases for your project.
+view schedule
+view where class is
+view current location
+view who are in the class
+view who were on lecture 
+check in a class of current location
+view where coursemates/friends are
+add friends
+view statistics
+
+
+2. Write down a use case scenario following the template:  
+  1. initial state - welcome screen, login page
+  2. normal flow
+  login successful->
+  check in page- would you like to check in(or question like "Are you at Metropolia now?")? 1-yes 2-no
+  if 1-yes chosen, application start to save user location, if 2-no is chosen, application does not save users location, and it is not possible for user to see his location. anyway user is sent to main page 
+  main page view - possible to choose from 5 buttons: 1- view schedule, 2- find friend, 3-view own location, 4-properties, 5 log out
+  1-view schedule chosen ->
+  schedule shown, possible to click on course name or go to main page
+  course name clicked ->
+  course details shown, possible to  choose from 3 buttons: 1- view classroom location, 2-view friends on lecture(only works for cources in past or present, not for future courses), 3- go to main page
+  view friends on lecture chosen->
+  list of friends shown, possible to click on view friend location(only for friends who are shown as active-currently checked in), view friend details (for all) or go to main page
+  view location for active friend chosen ->
+  map with user's and friend's location shown, possible to choose view other friends (back) or go to main page
+  go to main page chosen ->
+  main page view - possible to choose from 4 buttons: 1- view schedule, 2- find friend, 3-view own location, 4-properties, 5 log out
+  5- log out chosen
+  
+  1. what can go wrong
+  login password information wrong
+  connection pure
+  user is outside metropolia, but choses to check in, his position could not be found
+  real class and schedule class does not match
+  etc.
+  
+  1. other activities going on at the same time
+  application saves users location and compares to schedule
+  
+  1. (successful) end state
+  map with locations in accordance to query is shown
+  
+3. Model one scenario as a flowchart using astah.
+  You can use the following types of nodes
+  * start (the initial state) 
+  * end state 
+  * branching state (= condition)
+  * an event state (=something happening)    
+  Remember that the arcs always have the direction, from a node to another (or to a same node if needed).   
+  Export your diagram as an image and push it to your github project, so you can insert it into your .md file.
+
+
+
+####B. User interface
+
+1. List the main views of the system
+1. Describe each of the views: what you can see in the view and do with it? What components are included in the view?
+2. Draw a wireframe mockup of your views (either using any online editor, MS Visio, paint or simply by hand with pen an paper + scan) and push them to your github project.
+1. Describe the state transitions between the views, what views you can access from a view, and the opposite, what views lead to a specific view?
+
+#####Retrun your work in tuubi assignment (one per group). Don't forget to list the team members that participated in editing.
